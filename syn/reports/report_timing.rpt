@@ -1,0 +1,88 @@
+Warning: Design 'top_entity' has '460' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+Warning: Design 'top_entity' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top_entity
+Version: Z-2007.03-SP1
+Date   : Thu Jul 12 18:25:00 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: IR[18] (input port)
+  Endpoint: datapath_0/decode_map/RF/OUT1_reg[0]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top_entity         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock (input port clock) (rise edge)                    0.00       0.00
+  input external delay                                    0.00       0.00 r
+  IR[18] (in)                                             0.00       0.00 r
+  dep_man/IR[18] (dependency_manager)                     0.00       0.00 r
+  dep_man/U58/ZN (INV_X1)                                 0.03       0.03 f
+  dep_man/U35/ZN (XNOR2_X1)                               0.06       0.09 f
+  dep_man/U33/ZN (OR3_X1)                                 0.09       0.18 f
+  dep_man/U48/ZN (NOR4_X1)                                0.06       0.25 r
+  dep_man/U47/ZN (NOR2_X1)                                0.02       0.27 f
+  dep_man/U11/ZN (AND4_X1)                                0.05       0.32 f
+  dep_man/U62/ZN (NOR2_X1)                                0.04       0.37 r
+  dep_man/U60/ZN (OAI211_X1)                              0.04       0.41 f
+  dep_man/U111/ZN (INV_X1)                                0.07       0.47 r
+  dep_man/U87/ZN (INV_X1)                                 0.11       0.58 f
+  dep_man/U68/ZN (AND2_X1)                                0.08       0.66 f
+  dep_man/IR_OUT[7] (dependency_manager)                  0.00       0.66 f
+  cu_0/IR[7] (dlx_cu_FUNC_SIZE11_OP_CODE_SIZE6_CW_SIZE35)
+                                                          0.00       0.66 f
+  cu_0/U50/ZN (OR3_X1)                                    0.09       0.75 f
+  cu_0/U49/ZN (NOR4_X1)                                   0.14       0.89 r
+  cu_0/U29/ZN (INV_X1)                                    0.03       0.92 f
+  cu_0/U22/ZN (OR4_X1)                                    0.14       1.06 f
+  cu_0/U18/ZN (OAI21_X1)                                  0.05       1.11 r
+  cu_0/U64/ZN (OAI21_X1)                                  0.04       1.15 f
+  cu_0/U41/ZN (INV_X1)                                    0.04       1.19 r
+  cu_0/U6/ZN (NOR2_X1)                                    0.03       1.22 f
+  cu_0/U9/ZN (NAND2_X1)                                   0.04       1.26 r
+  cu_0/RD1_EN (dlx_cu_FUNC_SIZE11_OP_CODE_SIZE6_CW_SIZE35)
+                                                          0.00       1.26 r
+  datapath_0/RD1_EN (datapath)                            0.00       1.26 r
+  datapath_0/decode_map/RD1_EN (decode_stage)             0.00       1.26 r
+  datapath_0/decode_map/RF/RD1 (register_file_N32_A5_tot_regs32)
+                                                          0.00       1.26 r
+  datapath_0/decode_map/RF/U2963/ZN (AND3_X1)             0.07       1.33 r
+  datapath_0/decode_map/RF/U663/ZN (INV_X1)               0.09       1.43 f
+  datapath_0/decode_map/RF/U6/ZN (NOR3_X1)                0.20       1.62 r
+  datapath_0/decode_map/RF/U551/ZN (NAND2_X1)             0.05       1.68 f
+  datapath_0/decode_map/RF/U195/Z (BUF_X1)                0.08       1.76 f
+  datapath_0/decode_map/RF/U704/ZN (OAI222_X1)            0.08       1.84 r
+  datapath_0/decode_map/RF/U2838/ZN (NOR4_X1)             0.03       1.87 f
+  datapath_0/decode_map/RF/U2835/ZN (NAND4_X1)            0.04       1.90 r
+  datapath_0/decode_map/RF/OUT1_reg[0]/D (DFF_X1)         0.01       1.91 r
+  data arrival time                                                  1.91
+
+  clock CLK (rise edge)                                   2.20       2.20
+  clock network delay (ideal)                             0.00       2.20
+  datapath_0/decode_map/RF/OUT1_reg[0]/CK (DFF_X1)        0.00       2.20 r
+  library setup time                                     -0.03       2.17
+  data required time                                                 2.17
+  --------------------------------------------------------------------------
+  data required time                                                 2.17
+  data arrival time                                                 -1.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.26
+
+
+1

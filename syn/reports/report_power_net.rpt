@@ -1,0 +1,233 @@
+ 
+****************************************
+Report : power
+        -net
+        -analysis_effort low
+        -sort_mode net_switching_power
+Design : top_entity
+Version: Z-2007.03-SP1
+Date   : Thu Jul 12 18:25:06 2018
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+top_entity             5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+
+  Attributes
+  ----------
+      a  -  Switching activity information annotated on net
+      d  -  Default switching activity information on net
+
+                             Total      Static   Toggle   Switching
+Net                          Net Load   Prob.    Rate     Power      Attrs
+--------------------------------------------------------------------------------
+sig_ir_dependency[19]         15.165    0.490    0.2411      2.2117  
+sig_reg_delay4[3]             15.949    0.500    0.2273      2.1930  d
+sig_reg_delay4[2]             15.920    0.500    0.2273      2.1890  d
+sig_ir_dependency[27]         14.989    0.485    0.2386      2.1634  
+sig_ir_dependency[26]         12.700    0.486    0.2380      1.8286  
+sig_ir_dependency[30]         12.409    0.485    0.2383      1.7889  
+sig_en_dependecy              52.956    0.969    0.0510      1.6333  
+sig_ir_dependency[24]         11.187    0.491    0.2395      1.6209  
+sig_ir_dependency[25]         10.987    0.487    0.2394      1.5914  
+sig_ir_dependency[21]         11.139    0.483    0.2357      1.5885  
+sig_reg_delay4[0]             11.542    0.500    0.2273      1.5870  d
+sig_reg_delay4[1]             11.476    0.500    0.2273      1.5779  d
+sig_ir_dependency[16]         10.312    0.480    0.2398      1.4961  
+sig_ir_dependency[2]          10.217    0.479    0.2400      1.4834  
+sig_ir_dependency[20]         10.175    0.480    0.2393      1.4731  
+sig_ir_dependency[31]          9.650    0.481    0.2415      1.4101  
+sig_reg_delay4[4]              8.765    0.500    0.2273      1.2052  d
+sig_ir_dependency[28]          8.220    0.485    0.2386      1.1864  
+sig_ir_dependency[5]           7.940    0.487    0.2408      1.1569  
+sig_ir_dependency[17]          7.904    0.482    0.2365      1.1308  
+sig_ir_dependency[23]          7.371    0.489    0.2410      1.0744  
+sig_reg_delay1[0]              7.195    0.500    0.2273      0.9894  d
+sig_reg_delay1[2]              7.195    0.500    0.2273      0.9894  d
+sig_reg_delay1[3]              7.195    0.500    0.2273      0.9894  d
+sig_reg_delay1[1]              7.195    0.500    0.2273      0.9893  d
+sig_reg_delay1[4]              7.195    0.500    0.2273      0.9893  d
+sig_ir_dependency[1]           6.603    0.485    0.2388      0.9541  
+sig_ir_dependency[0]           6.586    0.491    0.2385      0.9502  
+sig_ir_dependency[18]          6.442    0.487    0.2410      0.9393  
+PC[2]                          6.665    0.500    0.2273      0.9165  d
+sig_ir_dependency[22]          5.979    0.483    0.2420      0.8754  
+sig_ir_dependency[3]           5.849    0.480    0.2390      0.8458  
+sig_reg_delay1[5]              6.058    0.500    0.2273      0.8330  d
+sig_ir_dependency[29]          5.489    0.483    0.2414      0.8017  
+sig_rd1_en                     5.799    0.197    0.2234      0.7836  
+sig_reg_delay3[2]              5.612    0.500    0.2273      0.7716  d
+sig_reg_delay3[3]              5.612    0.500    0.2273      0.7716  d
+sig_reg_delay2[0]              5.611    0.500    0.2273      0.7716  d
+sig_reg_delay2[2]              5.611    0.500    0.2273      0.7716  d
+sig_reg_delay2[3]              5.611    0.500    0.2273      0.7716  d
+sig_reg_delay3[0]              5.611    0.500    0.2273      0.7716  d
+sig_reg_delay2[1]              5.611    0.500    0.2273      0.7715  d
+sig_reg_delay2[4]              5.611    0.500    0.2273      0.7715  d
+sig_reg_delay3[1]              5.611    0.500    0.2273      0.7715  d
+sig_reg_delay3[4]              5.611    0.500    0.2273      0.7715  d
+PC[30]                         5.043    0.500    0.2273      0.6934  d
+sig_reg_delay2[5]              4.474    0.500    0.2273      0.6152  d
+PC[3]                          4.353    0.500    0.2273      0.5986  d
+PC[4]                          4.353    0.500    0.2273      0.5986  d
+PC[5]                          4.353    0.500    0.2273      0.5986  d
+PC[6]                          4.353    0.500    0.2273      0.5986  d
+PC[7]                          4.353    0.500    0.2273      0.5986  d
+PC[8]                          4.353    0.500    0.2273      0.5986  d
+PC[9]                          4.353    0.500    0.2273      0.5986  d
+PC[10]                         4.353    0.500    0.2273      0.5986  d
+PC[11]                         4.353    0.500    0.2273      0.5986  d
+PC[12]                         4.353    0.500    0.2273      0.5986  d
+PC[13]                         4.353    0.500    0.2273      0.5986  d
+PC[14]                         4.353    0.500    0.2273      0.5986  d
+PC[15]                         4.353    0.500    0.2273      0.5986  d
+PC[16]                         4.353    0.500    0.2273      0.5986  d
+PC[17]                         4.353    0.500    0.2273      0.5986  d
+PC[18]                         4.353    0.500    0.2273      0.5986  d
+PC[19]                         4.353    0.500    0.2273      0.5986  d
+PC[20]                         4.353    0.500    0.2273      0.5986  d
+PC[21]                         4.353    0.500    0.2273      0.5986  d
+PC[22]                         4.353    0.500    0.2273      0.5986  d
+PC[23]                         4.353    0.500    0.2273      0.5986  d
+PC[24]                         4.353    0.500    0.2273      0.5986  d
+PC[25]                         4.353    0.500    0.2273      0.5986  d
+PC[26]                         4.353    0.500    0.2273      0.5986  d
+PC[27]                         4.353    0.500    0.2273      0.5986  d
+PC[28]                         4.353    0.500    0.2273      0.5986  d
+PC[29]                         4.353    0.500    0.2273      0.5986  d
+sig_reg_delay4[5]              4.027    0.500    0.2273      0.5536  d
+sig_reg_delay3[5]              3.750    0.500    0.2273      0.5157  d
+PC[31]                         2.932    0.500    0.2273      0.4031  d
+sig_ir_dependency[6]           2.436    0.480    0.2427      0.3576  
+sig_ir_dependency[4]           2.373    0.485    0.2384      0.3423  
+sig_ir_dependency[10]          2.335    0.484    0.2401      0.3392  
+sig_ir_dependency[8]           1.639    0.473    0.2411      0.2391  
+sig_ir_dependency[9]           1.658    0.487    0.2369      0.2377  
+sig_ir_dependency[7]           1.620    0.485    0.2388      0.2341  
+sig_mux_sel_jal_addr[1]        4.050    0.079    0.0705      0.1728  
+PC[0]                          1.146    0.500    0.2273      0.1576  d
+PC[1]                          1.146    0.500    0.2273      0.1576  d
+sig_npc[3]                     0.699    0.501    0.3399      0.1437  
+sig_npc[4]                     0.699    0.499    0.3268      0.1382  
+sig_npc[5]                     0.699    0.500    0.2931      0.1239  
+sig_npc[6]                     0.699    0.495    0.2640      0.1116  
+sig_alu_opcode[1]             23.422    0.008    0.0078      0.1101  
+sig_alu_opcode[2]             23.422    0.008    0.0078      0.1101  
+sig_npc[7]                     0.699    0.504    0.2507      0.1060  
+sig_ir_dependency[15]          0.699    0.478    0.2392      0.1011  
+sig_ir_dependency[13]          0.699    0.485    0.2392      0.1011  
+sig_alu_opcode[0]             23.422    0.007    0.0071      0.1010  
+sig_ir_dependency[14]          0.699    0.485    0.2390      0.1010  
+sig_ir_dependency[12]          0.699    0.481    0.2389      0.1010  
+sig_npc[8]                     0.699    0.504    0.2379      0.1006  
+sig_ir_dependency[11]          0.699    0.482    0.2365      0.1000  
+sig_npc[16]                    0.699    0.503    0.2334      0.0987  
+sig_npc[9]                     0.699    0.496    0.2328      0.0984  
+sig_npc[28]                    0.699    0.499    0.2318      0.0980  
+sig_npc[10]                    0.699    0.500    0.2310      0.0977  
+sig_npc[26]                    0.699    0.504    0.2309      0.0976  
+sig_npc[15]                    0.699    0.503    0.2300      0.0973  
+sig_npc[23]                    0.699    0.503    0.2299      0.0972  
+sig_npc[11]                    0.699    0.498    0.2287      0.0967  
+sig_npc[18]                    0.699    0.498    0.2286      0.0967  
+sig_npc[14]                    0.699    0.499    0.2281      0.0964  
+sig_npc[12]                    0.699    0.498    0.2281      0.0964  
+sig_npc[17]                    0.699    0.508    0.2280      0.0964  
+sig_npc[24]                    0.699    0.501    0.2278      0.0963  
+sig_npc[20]                    0.699    0.501    0.2274      0.0961  
+sig_npc[2]                     0.699    0.500    0.2273      0.0961  d
+sig_npc[27]                    0.699    0.500    0.2272      0.0961  
+sig_npc[21]                    0.699    0.502    0.2270      0.0960  
+sig_npc[31]                    0.699    0.503    0.2269      0.0959  
+sig_npc[22]                    0.699    0.503    0.2264      0.0957  
+sig_npc[13]                    0.699    0.494    0.2257      0.0954  
+sig_npc[25]                    0.699    0.500    0.2257      0.0954  
+sig_npc[29]                    0.699    0.502    0.2256      0.0954  
+sig_npc[30]                    0.699    0.501    0.2255      0.0953  
+sig_npc[19]                    0.699    0.499    0.2242      0.0948  
+sig_mux_sel_alu_32[0]          6.945    0.022    0.0206      0.0866  
+sig_mux_sel_alu_32[1]          5.490    0.022    0.0204      0.0676  
+sig_rd2_en                     1.275    0.061    0.0837      0.0645  
+sig_npc_datapath[0]            0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[1]            0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[2]            0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[3]            0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[4]            0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[5]            0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[6]            0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[7]            0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[8]            0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[9]            0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[10]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[11]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[12]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[13]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[14]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[15]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[16]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[17]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[18]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[19]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[20]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[21]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[22]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[23]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[24]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[25]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[26]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[27]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[28]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[29]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[30]           0.310    0.500    0.2273      0.0426  d
+sig_npc_datapath[31]           0.310    0.500    0.2273      0.0426  d
+sig_alu_opcode[5]              6.149    0.011    0.0103      0.0385  
+sig_alu_opcode[4]              4.070    0.015    0.0146      0.0359  
+sig_alu_opcode[7]              6.174    0.007    0.0072      0.0268  
+sig_mux_sel_jal_addr[0]        5.430    0.006    0.0060      0.0199  
+sig_alu_opcode[6]              8.478    0.004    0.0038      0.0195  
+sig_mux_sel_imm                0.310    0.098    0.0851      0.0159  
+sig_rega_latch_en              0.310    0.085    0.0754      0.0141  
+sig_regimm_latch_en            0.310    0.085    0.0754      0.0141  
+sig_dram_en                    4.063    0.005    0.0045      0.0110  
+sig_destination[5]             0.310    0.060    0.0494      0.0093  
+sig_alu_outreg_en              0.310    0.052    0.0455      0.0085  
+sig_mux_sel_jal_imm            0.310    0.048    0.0428      0.0080  
+sig_alu_ma_latch_en            0.310    0.024    0.0216      0.0040  
+sig_jumpfc[0]                  0.310    0.019    0.0191      0.0036  
+sig_mux_sel_wb                 0.310    0.016    0.0141      0.0026  
+sig_rf_we                      0.310    0.015    0.0132      0.0025  
+sig_jumpfc[1]                  0.310    0.013    0.0129      0.0024  
+sig_regb_latch_en              0.310    0.013    0.0128      0.0024  
+sig_regbdelay_latch_en         0.310    0.008    0.0079      0.0015  
+sig_npc_latch_dec_en           0.310    0.006    0.0060      0.0011  
+sig_mux_sel_alu_1[1]           0.310    0.004    0.0037      0.0007  
+sig_sel_anpc                   0.310    0.003    0.0035      0.0007  
+sig_mux_sel_alu_1[0]           0.310    0.004    0.0035      0.0006  
+sig_lmd_latch_en               0.310    0.002    0.0025      0.0005  
+sig_dram_we                    0.310    0.002    0.0022      0.0004  
+sig_mux_sel_bimm               0.310    0.000    0.28e-4  5.199e-06  
+sig_alu_opcode[3]             22.535    0.000    0.0000      0.0000  d
+sig_mux_sel_alu_32[2]          5.727    0.000    0.0000      0.0000  d
+--------------------------------------------------------------------------------
+Total (187 nets)                                            81.0237 uW
+1

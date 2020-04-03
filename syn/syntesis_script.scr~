@@ -1,0 +1,64 @@
+# Include all the analyze, elaborate and compile steps here
+analyze -library WORK -format vhdl {a-a-globals.vhd}
+analyze -library WORK -format vhdl {a-b-myTypes.vhd}
+analyze -library WORK -format vhdl {b-a-a-reg_wr.vhd}
+analyze -library WORK -format vhdl {b-a-reg_generic.vhd}
+analyze -library WORK -format vhdl {b-c-DRAM.vhd}
+analyze -library WORK -format vhdl {b-d-registerfile.vhd}
+analyze -library WORK -format vhdl {c-a-mux21.vhd}
+analyze -library WORK -format vhdl {c-b-mux21_generic.vhd}
+analyze -library WORK -format vhdl {c-c-mux41.vhd}
+analyze -library WORK -format vhdl {c-d-mux41_generic.vhd}
+analyze -library WORK -format vhdl {c-e-mux51_generic.vhd}
+analyze -library WORK -format vhdl {d-a-rca_generic.vhd}
+analyze -library WORK -format vhdl {d-b-carry_select.vhd}
+analyze -library WORK -format vhdl {d-c-sum_generator.vhd}
+analyze -library WORK -format vhdl {d-d-sparse_tree.vhd}
+analyze -library WORK -format vhdl {d-e-P4adder.vhd}
+analyze -library WORK -format vhdl {d-f-P4add_sub.vhd}
+analyze -library WORK -format vhdl {e-a-LogicUnit.vhd}
+analyze -library WORK -format vhdl {dependency_manaager_v2.vhd}
+analyze -library WORK -format vhdl {e-b-generic_shifter.vhd}
+analyze -library WORK -format vhdl {e-c-comparator.vhd}
+analyze -library WORK -format vhdl {e-d-zero_detector.vhd}
+analyze -library WORK -format vhdl {e-e-a-ha.vhd}
+analyze -library WORK -format vhdl {e-e-b-fa.vhd}
+analyze -library WORK -format vhdl {e-e-c-rca.vhd}
+analyze -library WORK -format vhdl {e-e-d-rcas.vhd}
+analyze -library WORK -format vhdl {e-e-e-mux5to1.vhd}
+analyze -library WORK -format vhdl {e-e-f-boothmul.vhd}
+analyze -library WORK -format vhdl {e-e-f-encoder.vhd}
+analyze -library WORK -format vhdl {e-f-SimpleAdder4.vhd}
+analyze -library WORK -format vhdl {f-ALU.vhd}
+analyze -library WORK -format vhdl {g-a-decode_stage.vhd}
+analyze -library WORK -format vhdl {g-b-execute_stage.vhd}
+analyze -library WORK -format vhdl {g-c-mem_access_stage.vhd}
+analyze -library WORK -format vhdl {g-d-write_back_stage.vhd}
+analyze -library WORK -format vhdl {h-a-CU_HW.vhd}
+analyze -library WORK -format vhdl {h-b-DataPath.vhd}
+analyze -library WORK -format vhdl {h-c-top_entity.vhd}
+##############################################################
+# elaborating the top entity 
+elaborate top_entity -architecture Structural
+##############################################################
+# first compilation, without constraints #
+#compile
+# reporting riming and power after the first synthesis without constraints #
+#report_timing > report_timing_NoOPT.rpt
+#report_power > report_power_NoOPT.rpt
+#report_power -cell > report_power_cell_NoOPT.rpt
+#report_power -net > report_power_net_NoOPT.rpt
+##############################################################
+# optimize
+create_clock -name "CLK" -period 2 CLK
+report_clock > report_clock.rpt
+set_max_delay 2 -from [all_inputs] -to [all_outputs]
+compile 
+# save report
+report_timing > report_timing_opt.rpt
+report_area > report_area_opt.rpt
+report_power -cell > report_power_cell_OPT.rpt
+report_power -net > report_power_net_OPT.rpt
+# saving files
+write -hierarchy -f verilog -output top_entity.v
+write_sdc top_entity.sdc

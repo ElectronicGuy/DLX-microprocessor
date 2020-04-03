@@ -1,0 +1,28 @@
+Gate area 0.7980 um^2
+Level 0 Module top_entity                               Gates=     37409 Cells=   13069 Area=   29852.4 um^2
+Level 1 Module dep_man                                  Gates=170        Cells=110      Area=     135.9 um^2
+Level 1 Module datapath_0                               Gates=36620      Cells=12740    Area=   29223.3 um^2
+Level 2 Module datapath_0/decode_map                    Gates=10512      Cells=3645     Area=    8388.8 um^2
+Level 3 Module datapath_0/decode_map/RF                 Gates=10460      Cells=3607     Area=    8347.1 um^2
+Level 2 Module datapath_0/execute_map                   Gates=3825       Cells=2224     Area=    3052.9 um^2
+Level 3 Module datapath_0/execute_map/Alu_exe           Gates=3641       Cells=2118     Area=    2905.8 um^2
+Level 4 Module datapath_0/execute_map/Alu_exe/Shifter_exe Gates=2246       Cells=1247     Area=    1792.6 um^2
+Level 5 Module datapath_0/execute_map/Alu_exe/Shifter_exe/C88 Gates=348        Cells=177      Area=     278.0 um^2
+Level 5 Module datapath_0/execute_map/Alu_exe/Shifter_exe/C86 Gates=304        Cells=206      Area=     242.6 um^2
+Level 5 Module datapath_0/execute_map/Alu_exe/Shifter_exe/C50 Gates=292        Cells=197      Area=     233.3 um^2
+Level 5 Module datapath_0/execute_map/Alu_exe/Shifter_exe/C48 Gates=303        Cells=204      Area=     242.1 um^2
+Level 5 Module datapath_0/execute_map/Alu_exe/Shifter_exe/C10 Gates=388        Cells=175      Area=     309.9 um^2
+Level 5 Module datapath_0/execute_map/Alu_exe/Shifter_exe/C8 Gates=388        Cells=175      Area=     309.9 um^2
+Level 4 Module datapath_0/execute_map/Alu_exe/mult_exe  Gates=1267       Cells=761      Area=    1011.1 um^2
+Level 5 Module datapath_0/execute_map/Alu_exe/mult_exe/mux_0_1 Gates=112        Cells=63       Area=      89.9 um^2
+Level 5 Module datapath_0/execute_map/Alu_exe/mult_exe/mux_i_1 Gates=122        Cells=76       Area=      97.9 um^2
+Level 5 Module datapath_0/execute_map/Alu_exe/mult_exe/mux_i_2 Gates=142        Cells=88       Area=     113.8 um^2
+Level 5 Module datapath_0/execute_map/Alu_exe/mult_exe/mux_i_3 Gates=141        Cells=84       Area=     113.0 um^2
+Level 5 Module datapath_0/execute_map/Alu_exe/mult_exe/mux_i_4 Gates=153        Cells=90       Area=     122.4 um^2
+Level 5 Module datapath_0/execute_map/Alu_exe/mult_exe/mux_i_5 Gates=164        Cells=96       Area=     130.9 um^2
+Level 5 Module datapath_0/execute_map/Alu_exe/mult_exe/mux_i_6 Gates=174        Cells=102      Area=     139.4 um^2
+Level 5 Module datapath_0/execute_map/Alu_exe/mult_exe/mux_i_7 Gates=185        Cells=108      Area=     147.9 um^2
+Level 3 Module datapath_0/execute_map/mux_alu_32        Gates=184        Cells=106      Area=     147.1 um^2
+Level 2 Module datapath_0/mem_access_map                Gates=22282      Cells=6871     Area=   17781.6 um^2
+Level 3 Module datapath_0/mem_access_map/DRAM_0         Gates=22282      Cells=6871     Area=   17781.6 um^2
+Level 1 Module cu_0                                     Gates=516        Cells=155      Area=     412.0 um^2
